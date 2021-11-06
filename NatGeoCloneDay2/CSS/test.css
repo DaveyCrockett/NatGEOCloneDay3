@@ -1,0 +1,36 @@
+html {
+    font-size: 62.5%;/*1rem=10px*/
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-element {
+    background-color: green;
+    color: yellowgreen;
+    border: 1px solid black;
+    font-size: 1.6rem;
+    padding: 1rem;
+    flex-basis: 10rem;
+}
+
+/*mobile view*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+/*desktop view*/
+@media(min-width: 768px) {
+    .grid-container{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+    }
+}
